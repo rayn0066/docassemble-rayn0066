@@ -1,0 +1,27 @@
+---
+code: |
+  RJRcolumn_header = ""
+  
+  for RJRitem in RJRperson_info[0]:
+    RJRcolumn_header += RJRitem + '|'
+      
+  RJRcolumn_header = RJRcolumn_header[:-1]
+  
+---
+code: |
+  RJRdashes = "---"
+  for i in range(len(RJRperson_info[0]) - 1):
+    RJRdashes += "|---"
+---
+code: | 
+  RJRtable_rows = []
+  
+  for RJRitem in RJRperson_info:
+      BRrow = ""
+      for RJRkey in RJRitem:
+        BRrow += str(RJRitem[RJRkey]) + '|'
+      BRrow = BRrow[:-1]
+      RJRtable_rows.append(BRrow)
+---
+
+

@@ -1,0 +1,41 @@
+---
+variable name: RJRquestion
+use objects: True
+data:
+  - RJRquestion: Is the information displayed correct for each family member?
+    RJRchoices:
+      - Tim Rayner
+      - Jo Rayner
+      - Tegan Rayner
+      - Alex Rayner
+---
+mandatory: True
+question: Introduction to checkboxes
+subquestion: |
+  #### Here is the result of your checkbox selection
+  
+  ${ RJRquestion_table }
+  
+attachment:
+  docx template file: testB2_01_advanced_jinja-2.docx
+buttons:
+  - Exit: exit
+  - Restart: restart
+---
+table: RJRquestion_table
+rows:  RJRquestion
+columns:
+  - Question: |
+      row_item['RJRquestion']
+  - Selected answers: |
+      row_item['RJRanswers'].true_values()
+  - No. Selected answers: |
+      len(row_item['RJRanswers'].true_values())
+---
+question: |
+  ${ RJRquestion[i]['RJRquestion'] }
+fields:
+  - no label: RJRquestions[i]['RJRanswers']
+    datatype: checkboxes
+    code: RJRquestion[i]['RJRchoices']
+---

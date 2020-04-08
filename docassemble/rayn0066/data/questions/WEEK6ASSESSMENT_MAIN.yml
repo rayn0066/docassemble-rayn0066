@@ -1,0 +1,90 @@
+---
+include:
+  - RJRpersonal_info_data_block.yml
+  - RJRpersonal_info_table_code.yml
+  - RJR_personal_info_PDFquestion.yml
+---
+features:
+  css: RJRheader.css
+  debug: True
+  hide standard menu: False
+---
+mandatory: True
+continue button field: target_variable
+question:  
+
+  <span class="RJRtitle">
+    Family Personal Information 
+  </span>
+  
+subquestion: |
+
+  ${ RJRcolumn_header }
+  ${ RJRdashes }
+  %for RJRitem in RJRtable_rows:
+  ${ RJRitem }
+  %endfor
+  
+  <span class="RJRheader">
+    Click **continue** to confirm the Personal Information is correct for each family member.
+  </span>
+ 
+buttons:
+  - Continue: continue
+  - Exit: exit
+    url: https://www.flinders.edu.au
+---
+mandatory: True
+question: 
+  <span class="RJRtitle">
+    Family Personal Information Checklist 
+  </span>
+
+subquestion: | 
+
+  <span class="RJRheader">
+  Here are your results.
+  </span>
+ 
+  ${ RJRquestion_table }
+  
+attachment:
+  docx template file: testB2_01_advanced_jinja-2.docx
+  valid formats:
+   - pdf
+buttons:
+  - Exit: exit
+  - Restart: restart
+---
+table: RJRquestion_table
+rows:  RJRquestions
+columns:
+  - First Name: |
+      row_item['First Name']
+  - Last Name: |
+      row_item['Last Name']
+  - Age: |
+      row_item['Age']
+  - Hobbies: |
+      row_item['Hobbies']
+  - Do you like pets?: |
+      row_item['Do you like pets?']
+  - Which piece(s) of information are correct?: |
+      row_item['RJRanswers'].true_values()
+---
+question: |
+  ${ RJRquestions[i]['RJRquestion'] }
+subquestion: |
+  ${ RJRcolumn_header }
+  ${ RJRdashes }
+  %for RJRitem in RJRtable_rows:
+  ${ RJRitem }
+  %endfor
+  
+  **Please select all that are correct.**
+fields:
+  - no label: RJRquestions[i]['RJRanswers']
+    datatype: checkboxes 
+    code: RJRquestions[i]['RJRchoices'] 
+---
+
