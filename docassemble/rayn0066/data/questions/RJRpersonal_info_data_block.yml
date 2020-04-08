@@ -1,0 +1,25 @@
+---
+variable name: RJRperson_info
+use objects: True
+data:
+  - First Name: Tim 
+    Last Name: Rayner
+    Age: 50
+    Hobbies: Music
+    Do you like pets?: Yes
+  - First Name: Jo 
+    Last Name: Rayner
+    Age: 50
+    Hobbies: Hiking
+    Do you like pets?: Yes
+  - First Name: Tegan
+    Last Name: Rayner
+    Age: 24
+    Hobbies: Board Games
+    Do you like pets?: No
+  - First Name: Alex 
+    Last Name: Rayner
+    Age: 18
+    Hobbies: Electronics
+    Do you like pets?: Yes
+---

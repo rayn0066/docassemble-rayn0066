@@ -1,0 +1,52 @@
+---
+variable name: RJRquestions
+use objects: True
+data:
+  - RJRquestion: Which piece(s) of data are correct for **Tim Rayner**?
+    RJRchoices:
+      - Name
+      - Age
+      - Hobbies
+      - Do you like pets?
+    First Name: Tim
+    Last Name: Rayner
+    Age: 50
+    Hobbies: Music
+    Do you like pets?: Yes
+  - RJRquestion: Which piece(s) of data are correct for **Jo Rayner**?
+    RJRchoices:
+      - Name 
+      - Age
+      - Hobbies 
+      - Do you like pets? 
+    First Name: Jo 
+    Last Name: Rayner
+    Age: 50 
+    Hobbies: Hiking
+    Do you like pets?: Yes
+  - RJRquestion: Which piece(s) of data are correct for **Tegan Rayner**?
+    RJRchoices:
+      - Name 
+      - Age 
+      - Hobbies 
+      - Do you like pets?
+    First Name: Tegan
+    Last Name: Rayner
+    Age: 24
+    Hobbies: Board Games
+    Do you like pets?: No
+  - RJRquestion: Which piece(s) of data  are correct for **Alex Rayner**?
+    RJRchoices:
+      - Name 
+      - Age 
+      - Hobbies 
+      - Do you like pets?
+    First Name: Alex
+    Last Name: Rayner
+    Age: 18
+    Hobbies: Electronics
+    Do you like pets?: Yes
+
+---
+
+ 
