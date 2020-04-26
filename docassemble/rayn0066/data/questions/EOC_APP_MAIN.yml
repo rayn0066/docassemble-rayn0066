@@ -1,0 +1,300 @@
+---
+include:
+  - EOC_APP_QUESTIONS.yml
+  - EOC_APP_INELIGIBLE_ENDPOINTS.yml
+  - EOC_APP_ELIGIBLE_ENDPOINTS.yml
+  - EOC_APP_OTHER_BODIES_ENDPOINTS.yml
+---
+objects:
+  - endpoint: DADict
+---
+features:
+  css: EOCheader.css
+  debug: True
+  hide standard menu: False
+---
+mandatory: True
+continue button field: target_variable
+question: 
+
+  <span class="EOCtitle">
+    Welcome to the **Equal Opportunity Commission's Complaint Directory**
+  </span>
+
+subquestion: |
+  Thank you for using the **Equal Opportunity Commission's Complaint Directory**. This application will help direct blah blah blah blah
+  
+  If you are a business applying for an exemption under the Equal Opportunity Act please click the exemptions button below to find the EOC contact details.
+  
+  **Disclaimer:**
+  
+  *This application **is not** legal advice.*
+  
+  *Please answer all questions honestly and correctly.* 
+  
+  *This application does not guarantee the Equal Opportunity Commission or another complaint body will help you with your complaint. The Equal Opportunity Commission, or another complaint body, **will make the final decision** about your complaint.*
+ 
+  
+  If you click continue, you accept all these terms.
+
+buttons:
+  - "Continue": continue
+  - "Exemptions": exit
+    url: https://eoc.sa.gov.au
+  - "Exit": exit
+    url: https://eoc.sa.gov.au
+---
+mandatory: True
+code: |
+  if ( person_aggrieved == False ):
+    endpoint['notpersonaggrieved']
+  if ( person_aggrieved == True and incident_date == False ):
+    endpoint['notintimeframe']
+  if ( person_aggrieved == True and incident_date == True and which_state == False ):
+    endpoint['notinSA']
+  if ( person_aggrieved == True and incident_date == True and which_state == True and victimisation_sexualharrassment == True ):
+    endpoint['victimisation.sexualharrassment']
+  if ( person_aggrieved == True and incident_date == True and which_state == True and victimisation_sexualharrassment == False and discrimination == False ):
+    endpoint['nodiscrimination']
+  if ( person_aggrieved == True and incident_date == True and which_state == True and victimisation_sexualharrassment == False and discrimination == True and protected_ground == False ):
+    endpoint['noprotectedground']
+  if ( person_aggrieved == True and incident_date == True and which_state == True and victimisation_sexualharrassment == False and discrimination == True and protected_ground == True and area_public_life == False ):
+    endpoint['noareapubliclife']
+  if ( person_aggrieved == True and incident_date == True and which_state == True and victimisation_sexualharrassment == False and discrimination == True and protected_ground == True and area_public_life == True and state_or_federal == False ):
+    endpoint['federal']
+  else:
+    endpoint['eligible']
+---
+mandatory: True
+event: endpoint['notinSA']
+code: |
+  if different_state == 'Victoria':
+    endpoint['Victoria']
+  if different_state == 'NSW':
+    endpoint['NSW']
+  if different_state == 'Queensland':
+    endpoint['Queensland']
+  if different_state == 'Tasmania':
+    endpoint['Tasmania']
+  if different_state == 'Northern Territory':
+    endpoint['NT']
+  if different_state == 'Australian Capital Territory':
+    endpoint['ACT']
+  if different_state == 'Western Australia':
+    endpoint['WA']
+  if different_state == 'Outside Australia':
+    endpoint['outsideAus']
+---
+mandatory: True
+event: endpoint['victimisation.sexualharrassment']
+code: |
+  if victimisation_sexualharrassment2 == 'victimisation':
+    endpoint['victimisation']
+  if victimisation_sexualharrassment2 == 'sexualharrassment':
+    endpoint['sexualharrassment']
+---
+mandatory: True
+event: endpoint['nodiscrimination']
+code: |
+  if other_complaint_bodies == 'housingdisputes':
+    endpoint['housingdisputes']
+  if other_complaint_bodies == 'mentalhealth':
+    endpoint['mentalhealth']
+  if other_complaint_bodies == 'consentmedical':
+    endpoint['consentmedical']
+  if other_complaint_bodies == 'governmentreview':
+    endpoint['governmentreview']
+  if other_complaint_bodies == 'advancecare':
+    endpoint['advancecare']
+  if other_complaint_bodies == 'personalaffairs':
+    endpoint['personalaffairs']
+  if other_complaint_bodies == 'workplacediscrimination':
+    endpoint['workplacediscrimination']
+  if other_complaint_bodies == 'hswrelations':
+    endpoint['hwsrelations']
+  if other_complaint_bodies == 'banking':
+    endpoint['banking']
+  if other_complaint_bodies == 'consumerrights':
+    endpoint['consumerrights']
+  if other_complaint_bodies == 'administrativegovernment':
+    endpoint['administrativegovernment']
+  if other_complaint_bodies == 'education':
+    endpoint['education']
+  if other_complaint_bodies == 'electricity':
+    endpoint['electricity']
+  if other_complaint_bodies == 'employment':
+    endpoint['emplyoment']
+  if other_complaint_bodies == 'gas':
+     endpoint['gas']
+  if other_complaint_bodies == 'guardianshipyoung':
+    endpoint['guardianshipyoung']
+  if other_complaint_bodies == 'healthcare':
+    endpoint['healthcare']
+  if other_complaint_bodies == 'humanrights':
+    endpoint['humanrights']
+  if other_complaint_bodies == 'land':
+    endpoint['land']
+  if other_complaint_bodies == 'lawyers':
+    endpoint['lawyers']
+  if other_complaint_bodies == 'government':
+    endpoint['government']
+  if other_complaint_bodies == 'media':
+    endpoint['media']
+  if other_complaint_bodies == 'mentallyvulnerable':
+    endpoint['mentallyvulnerable']
+  if other_complaint_bodies == 'internet':
+    endpoint['internet']
+  if other_complaint_bodies == 'infrastructure':
+    endpoint['infrastructure']
+  if other_complaint_bodies == 'police':
+    endpoint['police']
+  if other_complaint_bodies == 'publictrustee':
+    endpoint['publictrustee']
+  if other_complaint_bodies == 'stategovernment':
+    endpoint['stategovernment']
+  if other_complaint_bodies == 'transport':
+    endpoint['transport']
+  if other_complaint_bodies == 'crimevictims':
+    endpoint['crimevictims']
+  if other_complaint_bodies == 'water':
+    endpoint['water']
+  if other_complaint_bodies == 'returntowork':
+    endpoint['returntowork']
+
+---
+mandatory: True
+event: endpoint['noprotectedground']
+code: |
+  if other_complaint_bodies == 'housingdisputes':
+    endpoint['protected_ground_housingdisputes']
+  if other_complaint_bodies == 'mentalhealth':
+    endpoint['protected_ground_mentalhealth']
+  if other_complaint_bodies == 'consentmedical':
+    endpoint['protected_ground_consentmedical']
+  if other_complaint_bodies == 'governmentreview':
+    endpoint['protected_ground_governmentreview']
+  if other_complaint_bodies == 'advancecare':
+    endpoint['protected_ground_advancecare']
+  if other_complaint_bodies == 'personalaffairs':
+    endpoint['protected_ground_personalaffairs']
+  if other_complaint_bodies == 'workplacediscrimination':
+    endpoint['protected_ground_workplacediscrimination']
+  if other_complaint_bodies == 'hswrelations':
+    endpoint['protected_ground_hwsrelations']
+  if other_complaint_bodies == 'banking':
+    endpoint['protected_ground_banking']
+  if other_complaint_bodies == 'consumerrights':
+    endpoint['protected_ground_consumerrights']
+  if other_complaint_bodies == 'administrativegovernment':
+    endpoint['protected_ground_administrativegovernment']
+  if other_complaint_bodies == 'education':
+    endpoint['protected_ground_education']
+  if other_complaint_bodies == 'electricity':
+    endpoint['protected_ground_electricity']
+  if other_complaint_bodies == 'employment':
+    endpoint['protected_ground_emplyoment']
+  if other_complaint_bodies == 'gas':
+     endpoint['protected_ground_gas']
+  if other_complaint_bodies == 'guardianshipyoung':
+    endpoint['protected_ground_guardianshipyoung']
+  if other_complaint_bodies == 'healthcare':
+    endpoint['protected_ground_healthcare']
+  if other_complaint_bodies == 'humanrights':
+    endpoint['protected_ground_humanrights']
+  if other_complaint_bodies == 'land':
+    endpoint['protected_ground_land']
+  if other_complaint_bodies == 'lawyers':
+    endpoint['protected_ground_lawyers']
+  if other_complaint_bodies == 'government':
+    endpoint['protected_ground_government']
+  if other_complaint_bodies == 'media':
+    endpoint['protected_ground_media']
+  if other_complaint_bodies == 'mentallyvulnerable':
+    endpoint['protected_ground_mentallyvulnerable']
+  if other_complaint_bodies == 'internet':
+    endpoint['protected_ground_internet']
+  if other_complaint_bodies == 'infrastructure':
+    endpoint['protected_ground_infrastructure']
+  if other_complaint_bodies == 'police':
+    endpoint['protected_ground_police']
+  if other_complaint_bodies == 'publictrustee':
+    endpoint['protected_ground_publictrustee']
+  if other_complaint_bodies == 'stategovernment':
+    endpoint['protected_ground_stategovernment']
+  if other_complaint_bodies == 'transport':
+    endpoint['protected_ground_transport']
+  if other_complaint_bodies == 'crimevictims':
+    endpoint['protected_ground_crimevictims']
+  if other_complaint_bodies == 'water':
+    endpoint['protected_ground_water']
+  if other_complaint_bodies == 'returntowork':
+    endpoint['protected_ground_returntowork']
+---
+mandatory: True
+event: endpoint['noareapubliclife']
+code: |
+  if other_complaint_bodies == 'housingdisputes':
+    endpoint['noareapubliclife_housingdisputes']
+  if other_complaint_bodies == 'mentalhealth':
+    endpoint['noareapubliclife_mentalhealth']
+  if other_complaint_bodies == 'consentmedical':
+    endpoint['noareapubliclife_consentmedical']
+  if other_complaint_bodies == 'governmentreview':
+    endpoint['noareapubliclife_governmentreview']
+  if other_complaint_bodies == 'advancecare':
+    endpoint['noareapubliclife_advancecare']
+  if other_complaint_bodies == 'personalaffairs':
+    endpoint['noareapubliclife_personalaffairs']
+  if other_complaint_bodies == 'workplacediscrimination':
+    endpoint['noareapubliclife_workplacediscrimination']
+  if other_complaint_bodies == 'hswrelations':
+    endpoint['noareapubliclife_hwsrelations']
+  if other_complaint_bodies == 'banking':
+    endpoint['noareapubliclife_banking']
+  if other_complaint_bodies == 'consumerrights':
+    endpoint['noareapubliclife_consumerrights']
+  if other_complaint_bodies == 'administrativegovernment':
+    endpoint['noareapubliclife_administrativegovernment']
+  if other_complaint_bodies == 'education':
+    endpoint['noareapubliclife_education']
+  if other_complaint_bodies == 'electricity':
+    endpoint['noareapubliclife_electricity']
+  if other_complaint_bodies == 'employment':
+    endpoint['noareapubliclife_emplyoment']
+  if other_complaint_bodies == 'gas':
+     endpoint['noareapubliclife_gas']
+  if other_complaint_bodies == 'guardianshipyoung':
+    endpoint['noareapubliclife_guardianshipyoung']
+  if other_complaint_bodies == 'healthcare':
+    endpoint['noareapubliclife_healthcare']
+  if other_complaint_bodies == 'humanrights':
+    endpoint['noareapubliclife_humanrights']
+  if other_complaint_bodies == 'land':
+    endpoint['noareapubliclife_land']
+  if other_complaint_bodies == 'lawyers':
+    endpoint['noareapubliclife_lawyers']
+  if other_complaint_bodies == 'government':
+    endpoint['noareapubliclife_government']
+  if other_complaint_bodies == 'media':
+    endpoint['noareapubliclife_media']
+  if other_complaint_bodies == 'mentallyvulnerable':
+    endpoint['mentallyvulnerable']
+  if other_complaint_bodies == 'internet':
+    endpoint['noareapubliclife_internet']
+  if other_complaint_bodies == 'infrastructure':
+    endpoint['noareapubliclife_infrastructure']
+  if other_complaint_bodies == 'police':
+    endpoint['noareapubliclife_police']
+  if other_complaint_bodies == 'publictrustee':
+    endpoint['noareapubliclife_publictrustee']
+  if other_complaint_bodies == 'stategovernment':
+    endpoint['noareapubliclife_stategovernment']
+  if other_complaint_bodies == 'transport':
+    endpoint['noareapubliclife_transport']
+  if other_complaint_bodies == 'crimevictims':
+    endpoint['noareapubliclife_crimevictims']
+  if other_complaint_bodies == 'water':
+    endpoint['noareapubliclife_water']
+  if other_complaint_bodies == 'returntowork':
+    endpoint['noareapubliclife_returntowork']
+---

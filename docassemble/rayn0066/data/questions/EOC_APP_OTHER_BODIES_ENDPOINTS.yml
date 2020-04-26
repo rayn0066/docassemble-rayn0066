@@ -1,0 +1,2581 @@
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with a **housing dispute** please contact SACAT.
+
+  Please click on the link below to access the SACAT website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+
+
+event: endpoint['housingdisputes']
+buttons:
+  - SACAT Website: exit
+    url: http://sacat.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint involves **Medical/Mental Health Issues** please contact SACAT.
+
+  Please click on the link below to access the SACAT website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+
+
+event: endpoint['mentalhealth']
+buttons:
+  - SACAT Website: exit
+    url: http://sacat.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Consent to Medical Treatment** please contact SACAT.
+
+  Please click on the link below to access the SACAT website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+
+
+event: endpoint['consentmedical']
+buttons:
+  - SACAT Website: exit
+    url: http://sacat.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Reviewing a Government Decision**, please contact SACAT.
+
+  Please click on the link below to access the SACAT website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+
+
+event: endpoint['governmentreview']
+buttons:
+  - SACAT Website: exit
+    url: http://sacat.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with a **housing dispute**, please contact SACAT.
+
+  Please click on the link below to access the SACAT website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+
+
+event: endpoint['protected_ground_housingdisputes']
+buttons:
+  - SACAT Website: exit
+    url: http://sacat.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with a **Medical/Mental Health Issue**, please contact SACAT.
+
+  Please click on the link below to access the SACAT website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+
+
+event: endpoint['protected_ground_mentalhealth']
+buttons:
+  - SACAT Website: exit
+    url: http://sacat.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Consent to Medical Treatment**, please contact SACAT.
+
+  Please click on the link below to access the SACAT website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+
+
+event: endpoint['protected_ground_consentmedical']
+buttons:
+  - SACAT Website: exit
+    url: http://sacat.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Reviews of Government Decisions**, please contact SACAT.
+
+  Please click on the link below to access the SACAT website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+
+
+event: endpoint['protected_ground_governmentreview']
+buttons:
+  - SACAT Website: exit
+    url: http://sacat.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with a **housing dispute**, please contact SACAT.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  Did the discrimination occur in an area of public life? | $ { area_public_life }
+
+
+event: endpoint['noareapubliclife_housingdisputes']
+buttons:
+  - SACAT Website: exit
+    url: http://sacat.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with a **Medical/Mental Health Issue** please contact SACAT.
+
+  Please click on the link below to access the SACAT website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+
+
+event: endpoint['noareapubliclife_mentalhealth']
+buttons:
+  - SACAT Website: exit
+    url: http://sacat.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+  
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Consent to Medical Treatment** please contact SACAT.
+
+  Please click on the link below to access the SACAT website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+
+
+event: endpoint['noareapubliclife_consentmedical']
+buttons:
+  - SACAT Website: exit
+    url: http://sacat.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Reviews of Government Decisions** please contact SACAT.
+
+  Please click on the link below to access the SACAT website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+
+
+event: endpoint['noareapubliclife_governmentreview']
+buttons:
+  - SACAT Website: exit
+    url: http://sacat.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Advance Care**, please contact SACAT.
+
+  Please click on the link below to access the SACAT website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+
+
+event: endpoint['advancecare']
+buttons:
+  - SACAT Website: exit
+    url: http://sacat.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Guardianship and Administration of Personal Affairs**, please contact SACAT.
+
+  Please click on the link below to access the SACAT website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+
+
+event: endpoint['personalaffairs']
+buttons:
+  - SACAT Website: exit
+    url: http://sacat.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Workplace Discrimination**, please contact the South Australian Employment Tribunal.
+
+  Please click on the link below to access the South Australina Employment Tribunal's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['workplacediscrimination']
+buttons:
+  - "SAET Website": exit
+    url: https://www.saet.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Health, Safety and Workplace Relations**, please contact SafeWork SA.
+
+  Please click on the link below to access the SafeWork SA's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['hwsrelations']
+buttons:
+  - "SafeWork SA": exit
+    url: https://www.safework.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Banking and Financial Services **, please contact either of these complaint bodies:
+     - Australian Financial Complaints Authority
+     - Australian Securities and Investment Commission
+     - Ombudsman SA (complaints about Super SA Board)
+
+  Please click on the links below to access the complaint body website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['banking']
+buttons:
+  - "Australian Financial Complaints Authority": exit
+    url: https://www.afca.org.au
+  - "Australian Securities and Investment Commission": exit
+    url: https://asic.gov.au
+  - "Ombudsman SA": exit
+    url: https://www.ombudsman.sa.gov.au
+  - Restart: restart 
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Consumer Rights**, please contact the Commissioner for Consumer Affairs. 
+
+  Please click on the link below to access the Consumer and Business Services' website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['consumerrights']
+buttons:
+  - "Consumer and Business Services": exit
+    url: https://www.cbs.sa.gov.au
+  - Restart: restart 
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Administrative actions of Australian Government Departments and Agencies**, please contact the Commonwealth Ombudsman.
+
+  Please click on the link below to access the Commonwealth Ombudsman's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['administrativegovernment']
+buttons:
+  - "Commonwealth Ombudsman": exit
+    url: https://www.ombudsman.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Education and Training**, please contact either of these complaint bodies:
+    - Training Advocate
+    - Overseas Students Ombudsman
+    - Catholic Education Office
+    - Association of Idependent Schools of SA
+    - Ombudsman SA (complaints about Department of Education, Flinders University, University of Adelaide and University of South Australia)
+
+  Please click on the link below to access the complaint bodies website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['education']
+buttons:
+  - "Training Advocate": exit
+    url: https://www.trainingadvocate.sa.gov.au
+  - "Overseas Students Ombudsman": exit
+    url: https://www.ombudsman.gov.au/How-we-can-help/overseas-students
+  - "Catholic Education Office": exit
+    url: https://www.cesa.catholic.edu.au
+  - "Association of Independent Schools of SA": exit
+    url: https://www.ais.sa.edu.au
+  - "Ombudsman SA": exit 
+    url: https://www.ombudsman.sa.gov.au
+--- 
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Electricity**, please contact the Energy and Water Ombudsman SA.
+
+  Please click on the link below to access the Energy and Water Ombudsman SA's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['electricity']
+buttons:
+  - "Energy and Water Ombudsman SA": exit
+    url: https://ewosa.com.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Employment**, please contact the Fair Work Ombudsman.
+
+  Please click on the link below to access  the Fair Work Ombudsman's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['emplyoment']
+buttons:
+  - "Fair Work Ombudsman": exit
+    url: https://www.fairwork.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Gas Suppliers**, please contact the Energy and Water Ombudsman SA.
+
+  Please click on the link below to access the Energy and Water Ombudsman SA.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['gas']
+buttons:
+  - "Energy and Water Ombudsman SA": exit
+    url: https://ewosa.com.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Guardianship of Young People**, please contact the Guardian for Children and Young People.
+
+  Please click on the link below to access the Guardian for Children and Young People's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['guardianshipyoung']
+buttons:
+  - "Guardian for Children and Young People": exit
+    url: http://www.gcyp.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Healthcare and Community Services**, please contact either of these complaint bodies:
+     - Health and Community Services Complaints Commissioner
+     - Australian Health Practitioner Regulation Agency
+     - Ombudsmans SA (complaints about the administrative actions of the Department for Health and Wellbeing and the Local Health networks)
+
+  Please click on the link below to access the complaint body's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['healthcare']
+buttons:
+  - "Health and Community Services Complaints Commissioner": exit
+    url: https://www.hcscc.sa.gov.au
+  - "Australian Health Practitioner Regulation Agency": exit
+    url: https://www.ahpra.gov.au
+  - "Ombudsman SA": exit 
+    url: https://www.ombudsman.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Human Rights**, please contact the Australian Human Rights Commission.
+
+  Please click on the link below to access the Australian Human Rights Commission's website
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['humanrights']
+buttons:
+  - "Australian Human Rights Commission": exit
+    url: https://www.humanrights.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Land**, please contact the Environment, Resources and Development (ERD) Court.
+
+  Please click on the link below to access the Environment, Resources and Development Court's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['land']
+buttons:
+  - "Environment, Resources and Development Court": exit
+    url: http://www.courts.sa.gov.au/OurCourts/ERDCourt/Pages/default.aspx
+  - Restart: restart 
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Legal Practitioners**, please contact the Legal Profession Conduct Commissioner.
+
+  Please click on the link below to access the Legal Profession Conduct Commissioner's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['lawyers']
+buttons:
+  - "Legal Profession Conduct Commissioner": exit
+    url: https://www.lpcc.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Local Government**, please contact the SA Ombudsman.
+
+  Please click on the link below to access the SA Ombudsman's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['government']
+buttons:
+  - "SA Ombudsman": exit
+    url: https://www.ombudsman.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Media**, please contact the Australian Communications and Media Authority.
+
+  Please click on the link below to access the Australian Communications and Media Authority's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['media']
+buttons:
+  - "Australian Communications and Media Authority": exit 
+    url: https://www.acma.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Mentally Vulnerable**, please contact either of these complaint bodies:  
+  - Office of the Public Advocate 
+  - Community Visitor Scheme
+
+  Please click on the link below to access the complaint body's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['mentallyvulnerable']
+buttons: 
+  - "Office of the Public Advocate": exit
+    url: http://www.opa.sa.gov.au
+  - "Community Visitor Scheme": exit
+    url: https://communityvisitorscheme.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Phone, Internet and Telecommunications**, please contact the Telecommunications Industry Ombudsman.
+
+  Please click on the link below to access the Telecommunications Industry Ombudsman's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['internet']
+buttons:
+  - "Telecommunications Industry Ombudsman": exit
+    url: https://www.tio.com.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Planning and Infrastructure**, please contact the SA Ombudsman (complaints about the Department of Planning, Transport and Infrastructure).
+
+  Please click on the link below to access the SA Ombudsman's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['infrastructure']
+buttons:
+  - "Ombudsman SA": exit 
+    url: https://www.ombudsman.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Police**, please contact the Office for Public Integrity.
+
+  Please click on the link below to access the Office of Public Integrity's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['police']
+buttons:
+  - "Office of Public Integrity": exit
+    url: https://icac.sa.gov.au
+  - Restart: restart 
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Public Trustee**, please contact the SA Ombudsman.
+
+  Please click on the link below to access the SA Ombudsman's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['publictrustee']
+buttons:
+  - "SA Ombudsman": exit
+    url: https://www.ombudsman.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **State Government**, please contact the SA Ombudsman.
+
+  Please click on the link below to access the SA Ombudsman's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['stategovernment']
+buttons:
+  - "SA Ombudsman": exit
+    url: https://www.ombudsman.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Transport**, please contact the SA Ombudsman.
+
+  Please click on the link below to access the SA Ombudsman's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['transport']
+buttons:
+  - "SA Ombudsman": exit
+    url: https://www.ombudsman.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Victims of Crime**, please contact the Commissioner for Victims' Rights.
+
+  Please click on the link below to access the Commissioner for Victims' Rights website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['crimevictims']
+buttons:
+  - "Commissioner for Victims Rights": exit
+    url: https://www.voc.sa.gov.au
+  - Restart: restart 
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **Water**, please contact the Energy and Water Ombudsman.
+
+  Please click on the link below to access the Energy and Water Ombudsman's wesbite.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['water']
+buttons:
+  - "Energy and Water Ombudsman SA": exit
+    url: https://ewosa.com.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+ 
+  Unfortunately, the Equal Opportunity Commission only deals with **complaints of discriminaion**. 
+  
+  As your complaint deals with **ReturnToWork**, please contact either of these complaint bodies:
+    - ReturnToWorkSA
+    - SA Ombudsman
+
+  Please click on the link below to access the complaint body's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  
+event: endpoint['returntowork']
+buttons:
+  - "ReturnToWorkSA": exit
+    url: https://www.rtwsa.com
+  - "SA Ombudsman": exit
+    url: https://www.ombudsman.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with ...
+
+  Please click on the link below to access ...
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_advancecare']
+buttons:
+  - SACAT Website: exit
+    url: http://sacat.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Guardianship and Administration of Personal Affairs**, please contact SACAT.
+
+  Please click on the link below to access the SACAT website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_personalaffairs']
+buttons:
+  - SACAT Website: exit
+    url: http://sacat.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Workplace Discriminatio**, please contact the South Australian Employment Tribunal.
+
+  Please click on the link below to access the South Australian Employment Tirbunal's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_workplacediscrimination']
+buttons:
+  - "SAET Website": exit
+    url: https://www.saet.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Health, Safety and Workplace Relations**, please contact SafeWork SA.
+
+  Please click on the link below to access SafeWork SA's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_hwsrelations']
+buttons:
+  - "SafeWork SA": exit
+    url: https://www.safework.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Banking and Financial Services**, please contact either of the complaint bodies below:
+    - Australian Financial Complaints Authority
+    - Australian Securities and Investment Commission
+    - Ombudsman SA (complaints about Super SA Board)
+
+  Please click on the link below to access the complaint body's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_banking']
+buttons:
+  - "Australian Financial Complaints Authority": exit
+    url: https://www.afca.org.au
+  - "Australian Securities and Investment Commission": exit
+    url: https://asic.gov.au
+  - "Ombudsman SA": exit
+    url: https://www.ombudsman.sa.gov.au
+  - Restart: restart 
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Consumer Rights**, please contact the Commissioner for Consumer Affairs. 
+
+  Please click on the link below to access the Consumer and Business Services' website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_consumerrights']
+buttons:
+  - "Consumer and Business Services": exit
+    url: https://www.cbs.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Administrative actions of Australian Government Departments and Agencies**, please contact the Commonwealth Ombudsman.
+
+  Please click on the link below to access the Commonwealth Ombudsman's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_administrativegovernment']
+buttons: 
+  - "Commonwealth Ombudsman": exit
+    url: https://www.ombudsman.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Education and Training**, please contact either of these complaint bodies:
+    - Training Advocate
+    - Overseas Students Ombudsman
+    - Catholic Education Office
+    - Association of Idependent Schools of SA
+    - Ombudsman SA (complaints about Department of Education, Flinders University, University of Adelaide and University of South Australia)
+
+  Please click on the link below to access the complaint body's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_education']
+buttons:
+  - "Training Advocate": exit
+    url: https://www.trainingadvocate.sa.gov.au
+  - "Overseas Students Ombudsman": exit
+    url: https://www.ombudsman.gov.au/How-we-can-help/overseas-students
+  - "Catholic Education Office": exit
+    url: https://www.cesa.catholic.edu.au
+  - "Association of Independent Schools of SA": exit
+    url: https://www.ais.sa.edu.au
+  - "Ombudsman SA": exit 
+    url: https://www.ombudsman.sa.gov.au
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Electricity**, please contact the Energy and Water Ombudsman SA.
+
+  Please click on the link below to access the Energy and Water Ombudsman SA's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_electricity']
+buttons:
+  - "Energy and Water Ombudsman SA": exit
+    url: https://ewosa.com.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Employment**, please contact the Fair Work Ombudsman.
+
+  Please click on the link below to access the Fair Work Ombudsman's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_emplyoment']
+buttons:
+  - "Fair Work Ombudsman": exit
+    url: https://www.fairwork.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Gas Suppliers**, please contact the Energy and Water Ombudsman SA.
+
+  Please click on the link below to access the Energy and Water Ombudsman SA's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_gas']
+buttons:
+  - "Energy and Water Ombudsman SA": exit
+    url: https://ewosa.com.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Guardianship of Young People**, please contact the Guardian for Children and Young People.
+
+  Please click on the link below to access the Guardian for Children and Young People's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_guardianshipyoung']
+buttons:
+  - "Guardian for Children and Young People": exit
+    url: http://www.gcyp.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Healthcare and Community Services**, please contact either of these complaint bodies:
+   - Health and Community Services Complaints Commissioner
+   - Australian Health Practitioner Regulation Agency
+   - Ombudsmans SA (complaints about the administrative actions of the Department for Health and Wellbeing and the Local Health networks)
+
+  Please click on the link below to access the complaint body's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_healthcare']
+buttons:
+  - "Health and Community Services Complaints Commissioner": exit
+    url: https://www.hcscc.sa.gov.au
+  - "Australian Health Practitioner Regulation Agency": exit
+    url: https://www.ahpra.gov.au
+  - "Ombudsman SA": exit 
+    url: https://www.ombudsman.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Human Rights**, please contact the Australian Human Rights Commission.
+
+  Please click on the link below to access the Australian Human Rights Commission's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_humanrights']
+buttons:
+  - "Australian Human Rights Commission": exit
+    url: https://www.humanrights.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Land**, please contact the Environment, Resources and Development (ERD) Court.
+
+  Please click on the link below to access the Environment, Resources and Development Court's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_land']
+buttons:
+  - "Environment, Resources and Development Court": exit
+    url: http://www.courts.sa.gov.au/OurCourts/ERDCourt/Pages/default.aspx
+  - Restart: restart 
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Legal Practitioners**, please contact the Legal Profession Conduct Commissioner.
+
+  Please click on the link below to access the Legal Profession Conduct Commissioner's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_lawyers']
+buttons:
+  - "Legal Profession Conduct Commissioner": exit
+    url: https://www.lpcc.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with the **Local Government**, please contact the SA Ombudsman.
+
+  Please click on the link below to access the SA Ombudsman's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_government']
+buttons:
+  - "SA Ombudsman": exit
+    url: https://www.ombudsman.sa.gov.au
+  - Restart: restart
+
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Media**, please contact the Australian Communications and Media Authority.
+
+  Please click on the link below to access the Australian Communications and Media Authority's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_media']
+buttons:
+  - "Australian Communications and Media Authority": exit 
+    url: https://www.acma.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Mentally Vulnerable**, please contact either of these complaint bodies:
+    - Office of the Public Advocate 
+    - Community Visitor Scheme
+
+  Please click on the link below to access the complaint body's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_mentallyvulnerable']
+buttons: 
+  - "Office of the Public Advocate": exit
+    url: http://www.opa.sa.gov.au
+  - "Community Visitor Scheme": exit
+    url: https://communityvisitorscheme.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Phone, Internet and Telecommunications**, please contact the Telecommunications Industry Ombudsman.
+
+  Please click on the link below to access the Telecommunications Industry Ombudsman's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_internet']
+buttons:
+  - "Telecommunications Industry Ombudsman": exit
+    url: https://www.tio.com.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Planning and Infrastructure**, please contact the SA Ombudsman (complaints about the Department of Planning, Transport and Infrastructure).
+
+  Please click on the link below to access the SA Ombudsman's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_infrastructure']
+buttons:
+  - "Ombudsman SA": exit 
+    url: https://www.ombudsman.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Police**, please contact the Office of Public Integrity.
+
+  Please click on the link below to access the Office of Public Integrity's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_police']
+buttons:
+  - "Office of Public Integrity": exit
+    url: https://icac.sa.gov.au
+  - Restart: restart 
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Public Trustee**, please contact the SA Ombudsman.
+
+  Please click on the link below to access the SA Ombudsman's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_publictrustee']
+buttons:
+  - "SA Ombudsman": exit
+    url: https://www.ombudsman.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **State Government**, please contact the SA Ombudsman.
+
+  Please click on the link below to access the SA Ombudsman's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_stategovernment']
+buttons:
+  - "SA Ombudsman": exit
+    url: https://www.ombudsman.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Transport**, please contact the SA Ombudsman.
+
+  Please click on the link below to access the SA Ombudsman's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_transport']
+buttons:
+  - "SA Ombudsman": exit
+    url: https://www.ombudsman.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Victims of Crime**, please contact the Commissioner of Victims' Rights.
+
+  Please click on the link below to access the Commissioner of Victims' Rights website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_crimevictims']
+buttons:
+  - "Commissioner for Victims Rights": exit
+    url: https://www.voc.sa.gov.au
+  - Restart: restart 
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **Water**, please contact the Energy and Water Ombudsman.
+
+  Please click on the link below to access the Energy and Water Ombudsman's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_water']
+buttons:
+  - "Energy and Water Ombudsman SA": exit
+    url: https://ewosa.com.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected a protected ground, the Equal Opportunity Commission is unable to process your complaint. 
+
+  As your complaint deals with **ReturnToWorkSA**, please contact either of these complaint bodies:
+    - ReturnToWorkSA
+    - SA Ombudsman
+
+  Please click on the link below to access the complaint body's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['protected_ground_returntowork']
+buttons:
+  - "ReturnToWorkSA": exit
+    url: https://www.rtwsa.com
+  - "SA Ombudsman": exit
+    url: https://www.ombudsman.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Advance Care**, please contact SACAT.
+
+  Please click on the link below to access the SACAT website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_advancecare']
+buttons:
+  - SACAT Website: exit
+    url: http://sacat.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Guardianship and Administration of Personal Affairs**, please contact SACAT.
+
+  Please click on the link below to access the SACAT website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_personalaffairs']
+buttons:
+  - SACAT Website: exit
+    url: http://sacat.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Workplace Discriminatio**, please contact the South Australian Employment Tribunal.
+
+  Please click on the link below to access the South Australian Employment Tribunal's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+  
+event: endpoint['noareapubliclife_workplacediscrimination']
+buttons:
+  - "SAET Website": exit
+    url: https://www.saet.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Health, Safety and Workplace Relations**, please contact SafeWork SA.
+
+  Please click on the link below to access SafeWork SA's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_hwsrelations']
+buttons:
+  - "SafeWork SA": exit
+    url: https://www.safework.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Banking and Financial Services**, please contact either of the complaint bodies below: 
+   - Australian Financial Complaints Authority
+   - Australian Securities and Investment Commission
+   - Ombudsman SA (complaints about Super SA Board)
+
+  Please click on the link below to access the complaint body's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_banking']
+buttons:
+  - "Australian Financial Complaints Authority": exit
+    url: https://www.afca.org.au
+  - "Australian Securities and Investment Commission": exit
+    url: https://asic.gov.au
+  - "Ombudsman SA": exit
+    url: https://www.ombudsman.sa.gov.au
+  - Restart: restart 
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Consumer Rights**, please contact the Commissioner for Consumer Affairs. 
+
+  Please click on the link below to access the Consumer and Business Services' website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_consumerrights']
+buttons:
+  - "Consumer and Business Services": exit
+    url: https://www.cbs.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Administrative actions of Australian Government Departments and Agencies**, please contact the Commonwealth Ombudsman.
+
+  Please click on the link below to access the Commonwealth Ombudsman's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_administrativegovernment']
+buttons:
+  - "Commonwealth Ombudsman": exit
+    url: https://www.ombudsman.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Education and Training**, please contact either of these complaint bodies:
+    - Training Advocate
+    - Overseas Students Ombudsman
+    - Catholic Education Office
+    - Association of Idependent Schools of SA
+    - Ombudsman SA (complaints about Department of Education, Flinders University, University of Adelaide and University of South Australia)
+
+  Please click on the link below to access the complaint body's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_education']
+buttons:
+  - "Training Advocate": exit
+    url: https://www.trainingadvocate.sa.gov.au
+  - "Overseas Students Ombudsman": exit
+    url: https://www.ombudsman.gov.au/How-we-can-help/overseas-students
+  - "Catholic Education Office": exit
+    url: https://www.cesa.catholic.edu.au
+  - "Association of Independent Schools of SA": exit
+    url: https://www.ais.sa.edu.au
+  - "Ombudsman SA": exit 
+    url: https://www.ombudsman.sa.gov.au
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Electricity**, please contact the Energy and Water Ombudsman SA.
+
+  Please click on the link below to access the Energy and Water Ombudsman SA's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_electricity']
+buttons:
+  - "Energy and Water Ombudsman SA": exit
+    url: https://ewosa.com.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Employment**, please contact the Fair Work Ombudsman.
+
+  Please click on the link below to access the Fair Work Ombudsman's website
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_emplyoment']
+buttons:
+  - "Fair Work Ombudsman": exit
+    url: https://www.fairwork.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Gas Suppliers**, please contact the Energy and Water Ombudsman SA.
+
+  Please click on the link below to access the Energy and Water Ombudsman SA's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_gas']
+buttons:
+  - "Energy and Water Ombudsman SA": exit
+    url: https://ewosa.com.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Guardianship of Young People**, please contact the Guardian for Children and Young Children.
+
+  Please click on the link below to access the Guardian for Children and Young People's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_guardianshipyoung']
+buttons:
+  - "Guardian for Children and Young People": exit
+    url: http://www.gcyp.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Healthcare and Community Services**, please contact either of these complaint bodies:
+   - Health and Community Services Complaints Commissioner
+   - Australian Health Practitioner Regulation Agency
+   - Ombudsmans SA (complaints about the administrative actions of the Department for Health and Wellbeing and the Local Health networks)
+
+  Please click on the link below to access the complaint body's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_healthcare']
+buttons:
+  - "Health and Community Services Complaints Commissioner": exit
+    url: https://www.hcscc.sa.gov.au
+  - "Australian Health Practitioner Regulation Agency": exit
+    url: https://www.ahpra.gov.au
+  - "Ombudsman SA": exit 
+    url: https://www.ombudsman.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Human Rights**, please contact the Australian Human Rights Commission.
+
+  Please click on the link below to access the Australian Human Rights Commission's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_humanrights']
+buttons:
+  - "Australian Human Rights Commission": exit
+    url: https://www.humanrights.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Land**, please contact the Environment, Resources and Development (ERD) Court.
+
+  Please click on the link below to access the Environment, Resources and Development Court's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_land']
+buttons:
+  - "Environment, Resources and Development Court": exit
+    url: http://www.courts.sa.gov.au/OurCourts/ERDCourt/Pages/default.aspx
+  - Restart: restart 
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Legal Practitioners**, please contact the Legal Profession Conduct Commissioner.
+
+  Please click on the link below to access the Legal Profession Conduct Commissioner's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_lawyers']
+buttons:
+  - "Legal Profession Conduct Commissioner": exit
+    url: https://www.lpcc.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with the **Local Government**, please contact SA Ombudsman.
+
+  Please click on the link below to access the SA Ombudsman's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_government']
+buttons:
+  - "SA Ombudsman": exit
+    url: https://www.ombudsman.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Media**, please contact the Australian Communications and Media Authority.
+
+  Please click on the link below to access the Australian Communications and Media Authority's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_media']
+buttons:
+  - "Australian Communications and Media Authority": exit 
+    url: https://www.acma.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Mentally Vulnerable**, please contact either of these complaint bodies:
+    - Office of the Public Advocate 
+    - Community Visitor Scheme
+
+  Please click on the link below to access the complaint body's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_mentallyvulnerable']
+buttons: 
+  - "Office of the Public Advocate": exit
+    url: http://www.opa.sa.gov.au
+  - "Community Visitor Scheme": exit
+    url: https://communityvisitorscheme.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Phone, Internet and Telecommunications**, please contact the Telecommunications Industry Ombudsman.
+
+  Please click on the link below to access the Telecommunications Industry Ombudsman's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_internet']
+buttons:
+  - "Telecommunications Industry Ombudsman": exit
+    url: https://www.tio.com.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Planning and Infrastructure**, please contact the SA Ombudsman (complaints about the Department of Planning, Transport and Infrastructure).
+
+  Please click on the link below to access the SA Ombudsman's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_infrastructure']
+buttons:
+  - "Ombudsman SA": exit 
+    url: https://www.ombudsman.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Police**, please contact the Office of Public Integrity.
+
+  Please click on the link below to access the Office of Public Integrity's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_police']
+buttons:
+  - "Office of Public Integrity": exit
+    url: https://icac.sa.gov.au
+  - Restart: restart 
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Public Trustee**, please contact the SA Ombudsman.
+
+  Please click on the link below to access the SA Ombudsman's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_publictrustee']
+buttons:
+  - "SA Ombudsman": exit
+    url: https://www.ombudsman.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **State Government**, please contact the SA Ombudsman.
+
+  Please click on the link below to access the SA Ombudsman's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_stategovernment']
+buttons:
+  - "SA Ombudsman": exit
+    url: https://www.ombudsman.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Transport**, please contact the SA Ombudsman.
+
+  Please click on the link below to access the SA Ombudsman's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_transport']
+buttons:
+  - "SA Ombudsman": exit
+    url: https://www.ombudsman.sa.gov.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Victims of Crime**, please contact the Commissioner for Victims' Rights.
+
+  Please click on the link below to access the Commissioner for Victims' Rights website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_crimevictims']
+buttons:
+  - "Commissioner for Victims Rights": exit
+    url: https://www.voc.sa.gov.au
+  - Restart: restart 
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **Water**, please contact the Energy and Water Ombudsman.
+
+  Please click on the link below to access the Energy and Water Ombudsman.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_water']
+buttons:
+  - "Energy and Water Ombudsman SA": exit
+    url: https://ewosa.com.au
+  - Restart: restart
+---
+question: |
+  Thank you for completing the Equal Opportunity Commission's Complaint Directory.
+subquestion: |
+
+  Unfortunately, as you have not selected an area of public life, the Equal Opportunity Commission is unable to process your complaint.
+
+  As your complaint deals with **ReturnToWorkSA**, please contact either of these complaint bodies:
+    - ReturnToWorkSA
+    - SA Ombudsman
+
+  Please click on the link below to access the complaint body's website.
+  
+  Here are your responses:
+  
+  Question|Your Responses
+  --------|--------
+  Are you the person aggrieved?            | ${ person_aggrieved }
+  When did the incident occur?             | ${ incident_date }
+  Did the incident occur in South Australia?  | ${ which_state }
+  Was there discrimination?                | ${ discrimination }
+  On what ground is the discrimination in question based on? | ${ protected_ground }
+  
+event: endpoint['noareapubliclife_returntowork']
+buttons:
+  - "ReturnToWorkSA": exit
+    url: https://www.rtwsa.com
+  - "SA Ombudsman": exit
+    url: https://www.ombudsman.sa.gov.au
+  - Restart: restart
+---
